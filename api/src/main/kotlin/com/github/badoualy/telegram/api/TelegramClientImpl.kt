@@ -343,7 +343,7 @@ class TelegramClientImpl internal constructor(override val app: TelegramApp,
         if (nearestDc.thisDc != nearestDc.nearestDc) {
             logger.warn(tag,
                         "Current DC${nearestDc.thisDc} is not the nearest (DC${nearestDc.nearestDc})")
-            migrate(nearestDc.nearestDc).subscribe()
+//            migrate(nearestDc.nearestDc).subscribe()
         } else {
             logger.debug(tag, "Connected to the nearest DC${nearestDc.thisDc}")
         }
